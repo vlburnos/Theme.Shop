@@ -10,9 +10,9 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
 		$modx = & $object->xpdo;
 
 		if ($template = $modx->getObject('modTemplate', array('templatename' => 'Shop.main'))) {
-			if (!$resource = $modx->getObject('modResource', array('pagetitle' => 'Shop.main'))) {
+			if (!$resource = $modx->getObject('modResource', array('pagetitle' => 'Home'))) {
 				$resource = $modx->newObject('modResource');
-				$resource->set('pagetitle', 'Shop.home');
+				$resource->set('pagetitle', 'Home');
 			}
 			$resource->fromArray(array(
 				'published' => 0,

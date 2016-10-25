@@ -6,23 +6,11 @@
 <base href="[[++site_url]]" />
 <title>[[!pdoTitle]] / [[++site_name]]</title>
 
-<!-- You can add theme from bootswatch.com: just add it into &cssSources=``.
-For example: [[++assets_url]]components/themeshop/css/slatmeshop.min.css-->
-[[MinifyX?
-	&minifyCss=`1`
-	&registerCss=`1`
-	&cssSources=`
-		[[++assets_url]]components/themeshop/css/semantic.min.css,
-		[[++assets_url]]components/themeshop/css/shop.css
-	`
-	&minifyJs=`1`
-	&registerJs=`1`
-	&jsSources=`
-		[[++assets_url]]components/themeshop/js/semantic.min.js
-	`
-]]
+<link rel="stylesheet" type="text/css" href="[[++assets_url]]components/themeshop/css/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="[[++assets_url]]components/themeshop/css/shop.css">
 
 <script src="[[++assets_url]]components/themeshop/js/jquery.min.js"></script>
+<script src="[[++assets_url]]components/themeshop/js/semantic.min.js"></script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
