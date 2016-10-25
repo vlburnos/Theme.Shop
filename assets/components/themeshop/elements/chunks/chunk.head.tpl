@@ -12,13 +12,13 @@ For example: [[++assets_url]]components/themeshop/css/slatmeshop.min.css-->
 	&minifyCss=`1`
 	&registerCss=`1`
 	&cssSources=`
-		[[++assets_url]]components/themeshop/semantic.min.css,
+		[[++assets_url]]components/themeshop/css/semantic.min.css,
 		[[++assets_url]]components/themeshop/css/shop.css
 	`
 	&minifyJs=`1`
 	&registerJs=`1`
 	&jsSources=`
-		[[++assets_url]]components/themeshop/semantic.min.js
+		[[++assets_url]]components/themeshop/js/semantic.min.js
 	`
 ]]
 
