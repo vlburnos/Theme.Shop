@@ -1,28 +1,28 @@
 <!-- Static navbar -->
-<div class="navbar navbar-default navbar-static-top" role="navigation">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="/">[[++site_name]]</a>
-		</div>
-		<div class="navbar-collapse collapse">
-			<ul class="nav navbar-nav">
-				[[pdoMenu?
-					&startId=`0`
-					&level=`2`
-					&tplParentRow=`@INLINE
-					<li class="[[+classnames]] dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" [[+attributes]]>[[+menutitle]]<b class="caret"></b></a>
-						<ul class="dropdown-menu">[[+wrapper]]</ul>
-					</li>`
-					&tplOuter=`@INLINE [[+wrapper]]`
-				]]
-			</ul>
-		</div><!--/.nav-collapse -->
-	</div>
-</div>
+<nav class="uk-navbar uk-margin-large-bottom uk-navbar-attached">
+    <ul class="uk-navbar-nav uk-hidden-small">
+        [[!pdoMenu?
+            &parents=`15`
+            &level=`1`
+            &tplOuter=`@INLINE [[+wrapper]]`
+        ]]
+    </ul>
+</nav>
+<nav class="uk-navbar uk-margin-large-bottom uk-navbar-attached data-uk-sticky">
+    <a class="uk-navbar-brand uk-hidden-small" href="/">[[++site_name]]</a>
+    <ul class="uk-navbar-nav uk-hidden-small">
+        [[!pdoMenu?
+            &parents=`1`
+            &level=`2`
+            &tplParentRow=`@INLINE
+            <li class="[[+classnames]] uk-parent"  data-uk-dropdown="{ mode:'click' }">
+                <a href="#" class="" [[+attributes]]>[[+menutitle]] <i class="uk-icon-caret-down"></i></a>
+                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">[[+wrapper]]</div>
+            </li>`
+            &tplInner=`@INLINE <ul class="uk-nav uk-nav-dropdown uk-panel">[[+wrapper]]</ul>`
+            &tplOuter=`@INLINE [[+wrapper]]`
+        ]]
+    </ul>
+    <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+    <div class="uk-navbar-brand uk-navbar-center uk-visible-small">[[++site_name]]</div>
+</nav>

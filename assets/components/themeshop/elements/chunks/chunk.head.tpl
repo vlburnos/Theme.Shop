@@ -6,11 +6,14 @@
 <base href="[[++site_url]]" />
 <title>[[!pdoTitle]] / [[++site_name]]</title>
 
-<link rel="stylesheet" type="text/css" href="[[++assets_url]]components/themeshop/css/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="[[++assets_url]]components/themeshop/css/uikit.almost-flat.min.css">
+<link rel="stylesheet" type="text/css" href="[[++assets_url]]components/themeshop/css/components/sticky.almost-flat.min.css">
 <link rel="stylesheet" type="text/css" href="[[++assets_url]]components/themeshop/css/shop.css">
 
 <script src="[[++assets_url]]components/themeshop/js/jquery.min.js"></script>
-<script src="[[++assets_url]]components/themeshop/js/semantic.min.js"></script>
+<script src="[[++assets_url]]components/themeshop/js/uikit.min.js"></script>
+<script src="[[++assets_url]]components/themeshop/js/components/sticky.min.js"></script>
+<script src="[[++assets_url]]components/themeshop/js/shop.js"></script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>

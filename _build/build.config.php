@@ -4,7 +4,7 @@
 define('PKG_NAME','Theme.Shop');
 define('PKG_NAME_LOWER','themeshop');
 
-define('PKG_VERSION','1.0.1');
+define('PKG_VERSION','1.0.2');
 define('PKG_RELEASE','pl');
 define('PKG_AUTO_INSTALL', true);
 
@@ -30,10 +30,10 @@ define('MODX_CONNECTORS_URL', MODX_BASE_URL . 'connectors/');
 define('MODX_ASSETS_URL', MODX_BASE_URL . 'assets/');
 
 /* define build options */
-define('BUILD_CHUNK_UPDATE', false);
+define('BUILD_CHUNK_UPDATE', true);
 define('BUILD_TEMPLATE_UPDATE', false);
 
-define('BUILD_CHUNK_STATIC', false);
+define('BUILD_CHUNK_STATIC', true);
 define('BUILD_TEMPLATE_STATIC', false);
 
 $BUILD_RESOLVERS= array(
